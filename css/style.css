@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2 {
+  color: #222;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr:hover {
+  background-color: #eef;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 14px;
+  margin-top: 15px;
+}
+
+.badge-pass {
+  color: green;
+  font-weight: bold;
+}
+
+.badge-fail {
+  color: red;
+  font-weight: bold;
+}
