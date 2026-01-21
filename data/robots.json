@@ -1,0 +1,28 @@
+[
+  {
+    "id": "AMR-01",
+    "status": "Completed",
+    "uatResult": "Passed",
+    "uatCompletedDate": "2025-12-29",
+    "testsPassed": 42,
+    "testsFailed": 2,
+    "conclusion": "Robot is stable and approved for production deployment.",
+    "dates": {
+      "commencement": "2025-12-01",
+      "softwareChecklist": "2025-12-05",
+      "productionChecklist": "2025-12-07",
+      "materialsReceived": "2025-12-08",
+      "materials": "Lidar, Safety Scanner",
+      "uatStart": "2025-12-10",
+      "uatEnd": "2025-12-29"
+    },
+    "timeline": [
+      { "step": "Commencement", "emailDate": "2025-12-01" },
+      { "step": "Software Checklist Received", "emailDate": "2025-12-05" },
+      { "step": "Production Checklist Received", "emailDate": "2025-12-07" },
+      { "step": "Materials Received", "emailDate": "2025-12-08" },
+      { "step": "UAT Started", "emailDate": "2025-12-10" },
+      { "step": "UAT Completed", "emailDate": "2025-12-29" }
+    ]
+  }
+]
