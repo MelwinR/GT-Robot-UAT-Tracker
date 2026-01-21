@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Robot UAT Tracker</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background: #f4f4f4; }
+    tr:hover { background: #eef; cursor: pointer; }
+    .hidden { display: none; }
+    button { padding: 6px 12px; margin: 10px 0; }
+  </style>
+</head>
+<body>
+
+<h1>Robot UAT Tracking</h1>
+
+<!-- PAGE 1 -->
+<div id="page1">
+  <table>
+    <tr>
+      <th>Robot</th>
+      <th>Status</th>
+      <th>UAT Result</th>
+      <th>Completed Date</th>
+    </tr>
+    <tr onclick="openSummary()">
+      <td>AMR-01</td>
+      <td>Completed</td>
+      <td>Passed</td>
+      <td>29-Dec-2025</td>
+    </tr>
+  </table>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="hidden">
+  <button onclick="backToList()">← Back</button>
+  <h2>UAT Summary – AMR-01</h2>
+  <p><b>Tests Passed:</b> 42</p>
+  <p><b>Tests Failed:</b> 2</p>
+  <p><b>Conclusion:</b> Approved for production</p>
+
+  <h3>Dates</h3>
+  <ul>
+    <li>Commencement: 01-Dec-2025</li>
+    <li>Software Checklist Received: 05-Dec-2025</li>
+    <li>Production Checklist Received: 07-Dec-2025</li>
+    <li>Materials Received: 08-Dec-2025 (Lidar, Scanner)</li>
+    <li>UAT Start: 10-Dec-2025</li>
+    <li>UAT End: 29-Dec-2025</li>
+  </ul>
+
+  <button onclick="openTimeline()">View Timeline →</button>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="hidden">
+  <button onclick="backToSummary()">← Back</button>
+  <h2>Project Timeline – AMR-01</h2>
+  <ul>
+    <li>01-Dec-2025 – Commencement (Email)</li>
+    <li>05-Dec-2025 – Software Checklist (Email)</li>
+    <li>07-Dec-2025 – Production Checklist (Email)</li>
+    <li>08-Dec-2025 – Materials Received (Email)</li>
+    <li>10-Dec-2025 – UAT Started (Email)</li>
+    <li>29-Dec-2025 – UAT Completed (Email)</li>
+  </ul>
+</div>
+
+<script>
+  function openSummary() {
+    page1.style.display = "none";
+    page2.style.display = "block";
+  }
+  function backToList() {
+    page2.style.display = "none";
+    page1.style.display = "block";
+  }
+  function openTimeline() {
+    page2.style.display = "none";
+    page3.style.display = "block";
+  }
+  function backToSummary() {
+    page3.style.display = "none";
+    page2.style.display = "block";
+  }
+</script>
+
+</body>
+</html>
